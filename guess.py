@@ -1,8 +1,11 @@
 #產生一個隨機整數1~100(不要印出來)
 
 import random
-
-r = random.randint(1, 100)
+start = input('請決定隨機數字範圍:')
+end = input('請決定隨機數字範圍:')
+start = int(start)
+end = int(end)
+r = random.randint(start, end)
 count = 0
 while True:
     count += 1
